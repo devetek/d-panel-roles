@@ -1,0 +1,33 @@
+---
+roles:
+  - name: morgangraphics.ansible-role-nvm
+    version: v2.0.0
+  - name: staticdev.pyenv
+    version: 2.11.0
+  - name: gantsign.golang
+    version: 3.3.6
+  - name: geerlingguy.mysql
+    version: 4.2.2
+  - name: geerlingguy.postgresql
+    version: 3.4.2
+  - name: geerlingguy.php
+    version: 4.8.0
+  - name: geerlingguy.php-versions
+    version: 5.0.1
+  - name: devetek.postgresql
+    src: https://github.com/devetek/postgresql
+  - name: dpanel.init # install require package for Debian, Redhat, Fedora, etc
+    src: https://github.com/devetek/dpanel-resource-init
+  - name: dpanel.git # git setup for private or public repository
+    src: https://github.com/devetek/dpanel-resource-git
+  - name: dpanel.router # router platform with caddy | nginx | traefik
+    src: https://github.com/devetek/dpanel-resource-router
+  - name: dpanel.build # build artifact to tarball
+    src: https://github.com/devetek/dpanel-resource-build
+  - name: dpanel.deploy # deploy artifact tarball or docker to the resource (systemd)
+    src: https://github.com/devetek/dpanel-resource-deploy
+
+collections:
+  - name: ansible.posix
+  - name: community.mysql
+  - name: community.general
