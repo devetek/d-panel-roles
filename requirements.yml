@@ -14,6 +14,8 @@ roles:
     version: 4.8.0
   - name: geerlingguy.php-versions
     version: 5.0.1
+  - name: geerlingguy.composer
+    version: 1.9.2
   - name: devetek.postgresql
     src: https://github.com/devetek/postgresql
   - name: dpanel.init # install require package for Debian, Redhat, Fedora, etc
