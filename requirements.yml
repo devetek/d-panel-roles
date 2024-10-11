@@ -12,10 +12,12 @@ roles:
     version: 3.4.2
   - name: geerlingguy.php
     version: 6.0.0
-  - name: geerlingguy.php-versions
-    version: 6.2.0
+  - name: geerlingguy.php-versions # use temporary source, waiting PR to be approved (#92)
+    src: https://github.com/devetek/ansible-role-php-versions
   - name: geerlingguy.composer
     version: 1.9.2
+  - name: devetek.php-roadrunner # install rr binary globally, to run PHP app with RoadRunner
+    src: https://github.com/devetek/ansible-role-php-roadrunner
   - name: devetek.postgresql
     src: https://github.com/devetek/postgresql
   - name: dpanel.init # install require package for Debian, Redhat, Fedora, etc
